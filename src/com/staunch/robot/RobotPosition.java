@@ -8,5 +8,5 @@ package com.staunch.robot;
  */
 
 public class RobotPosition {
-
+    
 }
