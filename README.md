@@ -15,11 +15,18 @@ javac com/staunch/Main.java
 ```
 java com/staunch/Main 1 1 E RFRFRFRF
 ```
-3. Once we run the program with command - below result grids are printed step by step 
+------
+#### Command Examples
+
+
+##### Command Instruction 1: 
 ``` 
 1 1 E RFRFRFRF
 ```
 
+
+##### Martian Robot movement step by step:
+ 
 ```
 [0,3]	[1,3]	[2,3]	[3,3]	[4,3]	[5,3]	
 [0,2]	[1,2]	[2,2]	[3,2]	[4,2]	[5,2]	
