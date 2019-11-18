@@ -317,3 +317,6 @@ Exception in thread "main" java.lang.IllegalStateException: Robot has been LOST
 	at com.staunch.Main.sendCommandsToMartianRobot(Main.java:67)
 	at com.staunch.Main.main(Main.java:31)
 ``` 
+##### Video link of the running the application from Mac Terminal
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/VnOr7ERMWCI/0.jpg)](http://www.youtube.com/watch?v=VnOr7ERMWCI&feature=youtu.be)
