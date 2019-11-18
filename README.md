@@ -175,7 +175,7 @@ Command Instruction 2
 ======
 
 ``` 
-1 1 E RFRFRFRF
+3 2 N FRRFLLFFRRFLL
 ```
 
 
