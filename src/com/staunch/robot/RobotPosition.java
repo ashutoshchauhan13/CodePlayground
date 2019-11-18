@@ -56,4 +56,18 @@ public class RobotPosition {
     public void decreaseYCoordinate() {
         yCoordinate--;
     }
+
+    public String getOrientationDirection() {
+        switch (orientation){
+            case 'N':
+                return 	"\u2191";
+            case 'E':
+                return "\u2192";
+            case 'S':
+                return "\u2193";
+            case 'W':
+                return "\u2190";
+        }
+        return "";
+    }
 }
