@@ -3,7 +3,7 @@
 ![Alt text](res/Robot-Movement-1stCommand-Example.jpeg?raw=true "Understanding Robot movement ")
 
 
-### Command to compile the code:
+#### How to compile and run the code:
 1. Navigate to src directory and then run the javac command to compile the src files
 
 ```
@@ -19,7 +19,8 @@ java com/staunch/Main 1 1 E RFRFRFRF
 #### Command Examples
 
 
-##### Command Instruction 1: 
+Command Instruction 1
+====== 
 ``` 
 1 1 E RFRFRFRF
 ```
@@ -158,3 +159,230 @@ x: 1 y: 1 orientation: E
 <<============================== Command End ==============================>>
 
 ```
+
+##### Result of Instruction 1: x: 1 y: 1 orientation: E
+
+x: 1 y: 1 orientation: E
+
+``` 
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+[     ]	[1,1:→]	[     ]	[     ]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]
+``` 
+
+Command Instruction 2
+======
+
+``` 
+1 1 E RFRFRFRF
+```
+
+
+##### Martian Robot movement step by step:
+``` 
+[0,3]	[1,3]	[2,3]	[3,3]	[4,3]	[5,3]	
+[0,2]	[1,2]	[2,2]	[3,2]	[4,2]	[5,2]	
+[0,1]	[1,1]	[2,1]	[3,1]	[4,1]	[5,1]	
+[0,0]	[1,0]	[2,0]	[3,0]	[4,0]	[5,0]	
+
+
+FRRFLLFFRRFLL
+
+
+x: 3 y: 2 orientation: N
+<<============================== Starting Robot Position ==============================>>
+
+
+x: 3 y: 2 orientation: N
+
+
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[3,2:↑]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+
+
+<<============================== Command Start ==============================>>
+Command given: F	I move forward while retaining the rotation
+Let's Move Forward
+
+x: 3 y: 3 orientation: N
+
+
+[     ]	[     ]	[     ]	[3,3:↑]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+
+
+------------------------------------------------------------
+Command given: R	I make clock wise turn
+Let's Turn Clockwise
+
+x: 3 y: 3 orientation: E
+
+
+[     ]	[     ]	[     ]	[3,3:→]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+
+
+------------------------------------------------------------
+Command given: R	I make clock wise turn
+Let's Turn Clockwise
+
+x: 3 y: 3 orientation: S
+
+
+[     ]	[     ]	[     ]	[3,3:↓]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+
+
+------------------------------------------------------------
+Command given: F	I move forward while retaining the rotation
+Let's Move Forward
+
+x: 3 y: 2 orientation: S
+
+
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[3,2:↓]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+
+
+------------------------------------------------------------
+Command given: L	I make anti-clock wise turn
+Let's Turn Anti-Clockwise
+
+x: 3 y: 2 orientation: E
+
+
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[3,2:→]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+
+
+------------------------------------------------------------
+Command given: L	I make anti-clock wise turn
+Let's Turn Anti-Clockwise
+
+x: 3 y: 2 orientation: N
+
+
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[3,2:↑]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+
+
+------------------------------------------------------------
+Command given: F	I move forward while retaining the rotation
+Let's Move Forward
+
+x: 3 y: 3 orientation: N
+
+
+[     ]	[     ]	[     ]	[3,3:↑]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+
+
+------------------------------------------------------------
+Command given: F	I move forward while retaining the rotation
+Let's Move Forward
+
+x: 3 y: 4 orientation: N
+
+
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+
+
+------------------------------------------------------------
+Command given: R	I make clock wise turn
+Let's Turn Clockwise
+
+x: 3 y: 4 orientation: E
+
+
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+
+
+------------------------------------------------------------
+Command given: R	I make clock wise turn
+Let's Turn Clockwise
+
+x: 3 y: 4 orientation: S
+
+
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+
+
+------------------------------------------------------------
+Command given: F	I move forward while retaining the rotation
+Let's Move Forward
+
+x: 3 y: 3 orientation: S
+
+
+[     ]	[     ]	[     ]	[3,3:↓]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+
+
+------------------------------------------------------------
+Command given: L	I make anti-clock wise turn
+Let's Turn Anti-Clockwise
+
+x: 3 y: 3 orientation: E
+
+
+[     ]	[     ]	[     ]	[3,3:→]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+
+
+------------------------------------------------------------
+Command given: L	I make anti-clock wise turn
+Let's Turn Anti-Clockwise
+
+x: 3 y: 3 orientation: N
+
+
+[     ]	[     ]	[     ]	[3,3:↑]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+
+
+------------------------------------------------------------
+<<============================== Command End ==============================>>
+``` 
+
+##### Result of Instruction 1: x: 3 y: 3 orientation: N
+``` 
+x: 3 y: 3 orientation: N
+
+
+[     ]	[     ]	[     ]	[3,3:↑]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+``` 
