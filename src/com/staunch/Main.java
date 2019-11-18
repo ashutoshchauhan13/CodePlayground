@@ -10,10 +10,11 @@ import com.staunch.robot.RobotPosition;
 
 
 //TODO
-//1. Currently grid boundry values (xCoordinateLimit and yCoordinateLimit) are hard coded, it should be passed through the arguments
+//1. Currently grid boundary values (xCoordinateLimit and yCoordinateLimit) are hard coded, it should be passed through the arguments
 //2. Write tests
 //3. Clean up the Main.java class
-//4. Further de-coupling of the classes
+//4. Store the LOST position on a persistence memory (file/cache/DB etc)
+//5. Further de-coupling of the classes
 
 
 public class Main {

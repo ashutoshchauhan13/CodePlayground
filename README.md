@@ -349,7 +349,8 @@ Exception in thread "main" java.lang.IllegalStateException: Robot has been LOST
 1. Currently grid boundry values (xCoordinateLimit and yCoordinateLimit) are hard coded, it should be passed through the arguments 
 2. Write tests
 3. Clean up the Main.java class
-4. Further de-coupling of the classes
+4. Store the LOST position on a persistence memory (file/cache/DB etc)
+5. Further de-coupling of the classes
 
 
 
