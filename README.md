@@ -1,9 +1,31 @@
 # MartianRobot
 
+Martian robot is designed to move on a rectangular plane. It listens to following commands:
+
+1. 'L' - LeftRotationCommand : "makes anti-clock wise turn"
+2. 'R' - RightRotationCommand : "makes clock wise turn"
+3. 'F' - ForwardCommand : "Move forward while retaining the rotation"
+
+
+
+### Starting point : First draw the understanding
+
 ![Alt text](res/Robot-Movement-1stCommand-Example.jpeg?raw=true "Understanding Robot movement ")
 
 
-#### How to compile and run the code:
+### Note:
+1. Currently grid boundry values and set in Grid Constructor directly, if you want to change it please change in below code
+
+  ```java
+    public static void main(String[] args) {
+        Grid martianPlane = new Grid(5, 3);
+            .
+            .
+     }
+   ```
+
+
+### How to compile and run the code:
 1. Navigate to src directory and then run the javac command to compile the src files
 
 ```
@@ -320,3 +342,14 @@ Exception in thread "main" java.lang.IllegalStateException: Robot has been LOST
 ##### Video link of the running the application from Mac Terminal
 
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/VnOr7ERMWCI/0.jpg)](http://www.youtube.com/watch?v=VnOr7ERMWCI&feature=youtu.be)
+
+
+#### Further Improvements:
+
+1. Currently grid boundry values (xCoordinateLimit and yCoordinateLimit) are hard coded, it should be passed through the arguments 
+2. Write tests
+3. Clean up the Main.java class
+4. Further de-coupling of the classes
+
+
+
