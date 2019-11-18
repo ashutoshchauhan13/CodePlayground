@@ -1,7 +1,10 @@
 package com.staunch.command;
 
 import com.staunch.robot.RobotPosition;
+import org.junit.After;
 import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
 
 import static org.junit.Assert.*;
 
@@ -10,27 +13,27 @@ public class ForwardCommandTest {
     ForwardCommand forwardCommand;
     RobotPosition robotPosition;
 
-    @org.junit.Before
+    @Before
     public void setUp() throws Exception {
         forwardCommand = new ForwardCommand();
         robotPosition = new RobotPosition(0,0,'E');
     }
 
-    @org.junit.After
+    @After
     public void tearDown() throws Exception {
     }
 
-    @org.junit.Test
+    @Test
     public void getCommandCharacter() {
         Assert.assertEquals('F', forwardCommand.getCommandCharacter());
     }
 
-    @org.junit.Test
+    @Test
     public void tellMeHowYouOperate() {
         Assert.assertEquals("I move forward while retaining the rotation", forwardCommand.tellMeHowYouOperate());
     }
 
-    @org.junit.Test
+    @Test
     public void processCommand() {
         int xCoordinate = robotPosition.getXCoordinate();
         int yCoordinate = robotPosition.getYCoordinate();

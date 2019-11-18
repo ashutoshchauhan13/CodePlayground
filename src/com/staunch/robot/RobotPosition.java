@@ -3,11 +3,13 @@ package com.staunch.robot;
 
 /**
  * This class holds the RobotPosition
- * @version 0.1
+ *
  * @author Ashutosh Chauhan
+ * @version 0.1
  */
 
 public class RobotPosition {
+
 
     private int xCoordinate;
     private int yCoordinate;
@@ -35,8 +37,23 @@ public class RobotPosition {
         this.orientation = orientation;
     }
 
-    public void printCurrentPosition(){
-        System.out.println("\n\nx: "+ xCoordinate + " y: " + yCoordinate + " orientation: "+ orientation);
+    public void printCurrentPosition() {
+        System.out.println("\n\nx: " + xCoordinate + " y: " + yCoordinate + " orientation: " + orientation);
     }
 
+    public void incrementXCoordinate() {
+        xCoordinate++;
+    }
+
+    public void incrementYCoordinate() {
+        yCoordinate++;
+    }
+
+    public void decreaseXCoordinate() {
+        xCoordinate--;
+    }
+
+    public void decreaseYCoordinate() {
+        yCoordinate--;
+    }
 }
