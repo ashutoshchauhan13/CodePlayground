@@ -299,90 +299,21 @@ Command given: F	I move forward while retaining the rotation
 Let's Move Forward
 
 x: 3 y: 4 orientation: N
-
-
-[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
-[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
-[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
-[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
-
-
-------------------------------------------------------------
-Command given: R	I make clock wise turn
-Let's Turn Clockwise
-
-x: 3 y: 4 orientation: E
-
-
-[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
-[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
-[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
-[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
-
-
-------------------------------------------------------------
-Command given: R	I make clock wise turn
-Let's Turn Clockwise
-
-x: 3 y: 4 orientation: S
-
-
-[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
-[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
-[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
-[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
-
-
-------------------------------------------------------------
-Command given: F	I move forward while retaining the rotation
-Let's Move Forward
-
-x: 3 y: 3 orientation: S
-
-
-[     ]	[     ]	[     ]	[3,3:↓]	[     ]	[     ]	
-[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
-[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
-[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
-
-
-------------------------------------------------------------
-Command given: L	I make anti-clock wise turn
-Let's Turn Anti-Clockwise
-
-x: 3 y: 3 orientation: E
-
-
-[     ]	[     ]	[     ]	[3,3:→]	[     ]	[     ]	
-[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
-[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
-[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
-
-
-------------------------------------------------------------
-Command given: L	I make anti-clock wise turn
-Let's Turn Anti-Clockwise
-
-x: 3 y: 3 orientation: N
-
-
-[     ]	[     ]	[     ]	[3,3:↑]	[     ]	[     ]	
-[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
-[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
-[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
-
-
-------------------------------------------------------------
+Lost positions = [RobotPosition{x: 3, y: 3, o: N}]
+Exception in thread "main" java.lang.IllegalStateException: Robot has been LOST
+	at com.staunch.Main.checkIfRobotIsStillOnThePlane(Main.java:81)
+	at com.staunch.Main.sendCommandsToMartianRobot(Main.java:67)
+	at com.staunch.Main.main(Main.java:31)
 <<============================== Command End ==============================>>
 ``` 
 
 ##### Result of Instruction 1: x: 3 y: 3 orientation: N
 ``` 
-x: 3 y: 3 orientation: N
+x: 3 y: 4 orientation: N
+Lost positions = [RobotPosition{x: 3, y: 3, o: N}]
 
-
-[     ]	[     ]	[     ]	[3,3:↑]	[     ]	[     ]	
-[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
-[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
-[     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
+Exception in thread "main" java.lang.IllegalStateException: Robot has been LOST
+	at com.staunch.Main.checkIfRobotIsStillOnThePlane(Main.java:81)
+	at com.staunch.Main.sendCommandsToMartianRobot(Main.java:67)
+	at com.staunch.Main.main(Main.java:31)
 ``` 

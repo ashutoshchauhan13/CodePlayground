@@ -14,7 +14,7 @@ public class ForwardCommand implements Command {
         return message;
     }
 
-    public RobotPosition processCommand(RobotPosition robotPosition) {
+    public RobotPosition processCommand(RobotPosition robotPosition) throws IllegalStateException,IllegalArgumentException {
         System.out.print("Let's Move Forward");
         char orientation = robotPosition.getOrientation();
         switch (orientation) {
@@ -31,7 +31,7 @@ public class ForwardCommand implements Command {
                 robotPosition.decreaseXCoordinate();
                 break;
             default:
-                throw new IllegalStateException("Unexpected value: " + robotPosition.getOrientation());
+                throw new IllegalArgumentException("Unexpected value: " + robotPosition.getOrientation());
         }
         return robotPosition;
     }

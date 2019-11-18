@@ -1,15 +1,16 @@
 package com.staunch.robot;
 
 
+import java.util.List;
+
 /**
  * This class holds the RobotPosition
  *
  * @author Ashutosh Chauhan
- * @version 0.1
+ * @version 0.2
  */
 
 public class RobotPosition {
-
 
     private int xCoordinate;
     private int yCoordinate;
@@ -45,7 +46,7 @@ public class RobotPosition {
         xCoordinate++;
     }
 
-    public void incrementYCoordinate() {
+    public void incrementYCoordinate(){
         yCoordinate++;
     }
 
@@ -69,5 +70,14 @@ public class RobotPosition {
                 return "\u2190";
         }
         return "";
+    }
+
+    @Override
+    public String toString() {
+        return "RobotPosition{" +
+                "x: " + xCoordinate +
+                ", y: " + yCoordinate +
+                ", o: " + orientation +
+                '}';
     }
 }

@@ -28,6 +28,13 @@ public class Grid {
         this.yCoordinateLimit = yCoordinateLimit;
     }
 
+    public int getXCoordinateLimit() {
+        return xCoordinateLimit;
+    }
+
+    public int getYCoordinateLimit() {
+        return yCoordinateLimit;
+    }
 
     protected boolean isWithinAcceptableLimits(int coordinateLimit){
         return coordinateLimit >= 0 && coordinateLimit <= 50;

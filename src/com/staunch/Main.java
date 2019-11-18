@@ -11,15 +11,13 @@ import com.staunch.robot.RobotPosition;
 
 public class Main {
 
-    private static final int X_COORDINATE_LIMIT = 5;
-    private static final int Y_COORDINATE_LIMIT = 3;
     private static int xStartingCoordinate = 0;
     private static int yStartingCoordinate = 0;
     private static char orientation = 'S';
     private static String commandSequence = "";
 
     public static void main(String[] args) {
-        Grid martianPlane = new Grid(X_COORDINATE_LIMIT, Y_COORDINATE_LIMIT);
+        Grid martianPlane = new Grid(5, 3);
         martianPlane.printGrid();
 
         parseArguments(args);
@@ -64,13 +62,31 @@ public class Main {
         {
             Command command = getCommandFromCommandChar(commandInstruction);
             System.out.print("Command given: "+ command.getCommandCharacter() +  "\t");
-
+            RobotPosition robotPosition = deepCopyRobotPosition(martianRobot);
             martianRobot.executeCommand(command);
+            checkIfRobotIsStillOnThePlane(martianRobot, martianPlane, robotPosition);
             martianPlane.printGrid(martianRobot.getRobotPosition());
 
             System.out.println("------------------------------------------------------------");
         }
+        martianRobot.printAllLostPositions();
         System.out.println("<<============================== Command End ==============================>>");
+    }
+
+    private static void checkIfRobotIsStillOnThePlane(MartianRobot martianRobot, Grid martianPlane, RobotPosition robotPosition) {
+        if(martianPlane.getXCoordinateLimit()< martianRobot.getRobotPosition().getXCoordinate()
+                || martianPlane.getYCoordinateLimit()< martianRobot.getRobotPosition().getYCoordinate()){
+            martianRobot.addLostPosition(robotPosition);
+            martianRobot.printAllLostPositions();
+            throw new IllegalStateException("Robot has been LOST");
+        }
+    }
+
+    private static RobotPosition deepCopyRobotPosition(MartianRobot martianRobot) {
+        return new RobotPosition(martianRobot.getRobotPosition().getXCoordinate(),
+                        martianRobot.getRobotPosition().getYCoordinate(),
+                        martianRobot.getRobotPosition().getOrientation()
+                );
     }
 
 
