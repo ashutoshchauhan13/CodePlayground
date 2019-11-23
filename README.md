@@ -25,17 +25,31 @@ Martian robot is designed to move on a rectangular plane. It listens to followin
    ```
 
 
-### How to compile and run the code:
-1. Navigate to src directory and then run the javac command to compile the src files
-
+### How to compile and run the code (Project uses gradle) :
+1. Navigate to src directory and then run the gradle command to:
+     
+  a. Build the project 
+ 
 ```
-javac com/staunch/Main.java
+gradle build
 ```
 
+  b. Clean the project 
+   
+```
+gradle clean
+``` 
+
+  b. Run the tests 
+   
+```
+gradle test
+``` 
+    
 2. Run the application using below command 
    for example ("1 1 E RFRFRFRF is used as command")
 ```
-java com/staunch/Main 1 1 E RFRFRFRF
+gradle run --args="1 1 E RFRFRFRF"
 ```
 ------
 #### Command Examples
@@ -186,6 +200,7 @@ x: 1 y: 1 orientation: E
 
 x: 1 y: 1 orientation: E
 
+
 ``` 
 [     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
 [     ]	[     ]	[     ]	[     ]	[     ]	[     ]	
@@ -197,7 +212,7 @@ Command Instruction 2
 ======
 
 ``` 
-3 2 N FRRFLLFFRRFLL
+gradle run --args="1 1 E RFRFRFRF"
 ```
 
 
