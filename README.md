@@ -1,7 +1,7 @@
 # MartianRobot
 
 <p align="center">
-  <img width="450" height="800" src="https://github.com/ashutoshchauhan13/MartianRobot/blob/master/res/problem-statements.jpeg?raw=true">
+  <img width="300" height="168" src="https://github.com/ashutoshchauhan13/MartianRobot/blob/master/res/problem-statements.jpeg?raw=true">
 </p>
 
 Martian robot is designed to move on a rectangular plane. It listens to following commands:
