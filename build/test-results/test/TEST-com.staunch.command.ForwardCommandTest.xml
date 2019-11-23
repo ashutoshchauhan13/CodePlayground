@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.staunch.command.ForwardCommandTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-23T15:26:18" hostname="Ashutoshs-MacBook-Pro-3080.local" time="0.004">
+  <properties/>
+  <testcase name="getCommandCharacter" classname="com.staunch.command.ForwardCommandTest" time="0.001"/>
+  <testcase name="processCommand" classname="com.staunch.command.ForwardCommandTest" time="0.002"/>
+  <testcase name="tellMeHowYouOperate" classname="com.staunch.command.ForwardCommandTest" time="0.001"/>
+  <system-out><![CDATA[Let's Move ForwardI move forward while retaining the rotation
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

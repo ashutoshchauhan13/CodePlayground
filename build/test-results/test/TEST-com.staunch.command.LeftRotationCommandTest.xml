@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.staunch.command.LeftRotationCommandTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-23T15:26:18" hostname="Ashutoshs-MacBook-Pro-3080.local" time="0.0">
+  <properties/>
+  <testcase name="getCommandCharacter" classname="com.staunch.command.LeftRotationCommandTest" time="0.0"/>
+  <testcase name="processCommand" classname="com.staunch.command.LeftRotationCommandTest" time="0.0"/>
+  <testcase name="tellMeHowYouOperate" classname="com.staunch.command.LeftRotationCommandTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

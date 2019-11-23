@@ -12,12 +12,12 @@ import com.staunch.robot.RobotPosition;
 //TODO
 //1. Currently grid boundary values (xCoordinateLimit and yCoordinateLimit) are hard coded, it should be passed through the arguments
 //2. Write tests
-//3. Clean up the Main.java class
+//3. Clean up the MartianFunctionalTest.java class
 //4. Store the LOST position on a persistence memory (file/cache/DB etc)
 //5. Further de-coupling of the classes
 
 
-public class Main {
+public class MartianFunctionalTest {
 
     private static int xStartingCoordinate = 0;
     private static int yStartingCoordinate = 0;
