@@ -1,5 +1,9 @@
 # MartianRobot
 
+<p align="center">
+  <img width="450" height="800" src="https://github.com/ashutoshchauhan13/MartianRobot/blob/master/res/problem-statements.jpeg?raw=true">
+</p>
+
 Martian robot is designed to move on a rectangular plane. It listens to following commands:
 
 1. 'L' - LeftRotationCommand : "makes anti-clock wise turn"
@@ -10,8 +14,10 @@ Martian robot is designed to move on a rectangular plane. It listens to followin
 
 ### Starting point : First draw the understanding
 
-![Alt text](res/Robot-Movement-1stCommand-Example.jpeg?raw=true "Understanding Robot movement ")
 
+<p align="center">
+  <img width="450" height="800" src="https://github.com/ashutoshchauhan13/MartianRobot/blob/master/res/Robot-Movement-1stCommand-Example.jpeg?raw=true">
+</p>
 
 ### Note:
 1. Currently grid boundry values and set in Grid Constructor directly, if you want to change it please change in below code
