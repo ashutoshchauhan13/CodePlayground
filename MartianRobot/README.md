@@ -1,7 +1,7 @@
 # MartianRobot
 
 <p align="center">
-  <img width="300" height="168" src="https://github.com/ashutoshchauhan13/CodePlayground/blob/master/MartianRobot/blob/master/res/problem-statements.jpeg?raw=true">
+  <img width="300" height="168" src="https://github.com/ashutoshchauhan13/CodePlayground/blob/master/MartianRobot/res/problem-statements.jpeg?raw=true">
 	
 
 </p>
@@ -18,7 +18,7 @@ Martian robot is designed to move on a rectangular plane. It listens to followin
 
 
 <p align="center">
-  <img width="450" height="800" src="https://github.com/ashutoshchauhan13/CodePlayground/blob/master/MartianRobot/blob/master/res/Robot-Movement-1stCommand-Example.jpeg?raw=true">
+  <img width="450" height="800" src="https://github.com/ashutoshchauhan13/CodePlayground/blob/master/MartianRobot/res/Robot-Movement-1stCommand-Example.jpeg?raw=true">
 </p>
 
 ### Note:
