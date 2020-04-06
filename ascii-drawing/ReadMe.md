@@ -32,12 +32,12 @@ should allow users to:
     
    2. First pull the docker image from public repository (ashutoshchauhan13/ascii-drawing-test)
    ```console
-    docker pull ashutoshchauhan13/ascii-drawing-test
+    docker pull ashutoshchauhan13/ascii-drawing-test:final
  ```
 
    3. Run the docker image with below command 
    ```console
-    docker run -i ascii-drawing-test
+    docker run -i ascii-drawing-test:final
  ```
  
  <p align="center">
