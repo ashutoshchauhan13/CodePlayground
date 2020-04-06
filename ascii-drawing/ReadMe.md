@@ -21,7 +21,7 @@ should allow users to:
 ###How To  Run The Program
 
  
-####   Option1 : Using Docker:
+####   Option1 : Using Docker (Easiest Option):
    
    Using docker image is easier way to run the project, you just simply pill the image and run the project
    
@@ -67,7 +67,7 @@ This command will give you interactive
    4. Start executing the commands to the application
    
    
-   ##   Option 3: Using gradle:
+####   Option 3: Using gradle:
    
    Steps:
    1. Open the terminal, and navigate to the project folder  
@@ -86,7 +86,7 @@ This command will give you interactive
    4. Start executing the commands to the application
       
    
-   ##   Option 4: Using the IDE (IntelliJ)
+####   Option 4: Using the IDE (IntelliJ)
    
    Steps:
    1. Open the project source into IntelliJ/Ecllipse  
