@@ -39,6 +39,13 @@ should allow users to:
    ```console
     docker run -i ascii-drawing-test
  ```
+ 
+ <p align="center">
+  <img  src="https://github.com/ashutoshchauhan13/CodePlayground/blob/master/ascii-drawing/screen-shots/docker-image.jpeg?raw=true">
+	
+
+</p>
+
 
 This command will give you interactive 
 
@@ -100,27 +107,39 @@ This command will give you interactive
 
 _Test Case 1:_ Valid Commands 
 
-C 20 5
-L 1 3 7 3
-L 7 1 7 3
-R 15 2 20 5
-Q
+a. C 20 5
+
+b. L 1 3 7 3
+
+c. L 7 1 7 3
+
+d. R 15 2 20 5
+
+e. Q
 
 Output:
 
- 
+  <p align="center">
+  <img  src="https://github.com/ashutoshchauhan13/CodePlayground/blob/master/ascii-drawing/screen-shots/valid-commands.jpg?raw=true">
+	
+
+</p>
 
 
 _Test Case 2:_ Invalid Commands 
 
-C 
-C 20 5
-L 10 7 10 3
-Q
+a. C 
+
+b. C 20 5
+
+c. L 10 7 10 3
+
+d. Q
 
 Output:
 
-
+  <p align="center">
+  <img  src="https://github.com/ashutoshchauhan13/CodePlayground/blob/master/ascii-drawing/screen-shots/inavlid-commands.jpg?raw=true">
 
 
 
