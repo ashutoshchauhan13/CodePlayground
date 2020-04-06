@@ -95,7 +95,7 @@ This command will give you interactive
    4. Execute the commands in IDE's terminal window
    
 
-###Unit Tests
+### Unit Tests
 
 1. I have used junit and mockito for testing the app
 2. test is located in test dir (ascii-drawing/src/test/)
