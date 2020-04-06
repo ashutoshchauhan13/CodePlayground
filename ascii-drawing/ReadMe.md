@@ -1,7 +1,7 @@
 
 # Drawing Program - 05 April 2020
 
-###Description
+### Description
 
 Please implement a simple text (ASCII) based drawing program (something similar to a simplified version of Paint). The basic program
 should allow users to:
@@ -9,7 +9,7 @@ should allow users to:
  2. Draw on the canvas using text based commands
  3. Quit the program
 
-###Supported Commands
+### Supported Commands
 
 |Command 		|Description|
 |----|----|
@@ -18,7 +18,7 @@ should allow users to:
 |R x1 y1 x2 y2  | Draw a new rectangle, with upper left corner at coordinate (x1, y1) and lower right coordinate at (x2, y2). Lines are made up of the x character|
 |Q              | Quit the program|
 
-###How To  Run The Program
+### How To  Run The Program
 
  
 ####   Option1 : Using Docker (Easiest Option):
