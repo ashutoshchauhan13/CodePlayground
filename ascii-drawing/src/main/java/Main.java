@@ -1,3 +1,6 @@
+import app.CommandProcessor;
+import app.UserCommandProcessor;
+
 import java.util.Scanner;
 
 public class Main {
@@ -6,17 +9,12 @@ public class Main {
         System.out.println("-------- Coding Problem: Drawing Program ----------");
         System.out.print("enter command: ");
         Scanner scanner = new Scanner(System.in);
-        CommandProcessor commandProcessor = new CommandProcessor(new AsciiCanvas());
-
+        CommandProcessor commandProcessor = new UserCommandProcessor();
         while (scanner.hasNextLine()) {
             String line = scanner.nextLine().trim();
             String[] userInputCommand = line.split("\\s+");
             try {
-                commandProcessor.processUserCommands(userInputCommand);
-                Canvas canvas = commandProcessor.getCanvas();
-                if (canvas != null) {
-                    canvas.render();
-                }
+                commandProcessor.executeCommand(userInputCommand);
             } catch (Exception ex) {
                 System.out.print(ex.getMessage());
             }

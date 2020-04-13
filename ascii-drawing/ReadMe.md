@@ -11,7 +11,7 @@ should allow users to:
 
 ### Supported Commands
 
-|Command 		|Description|
+|commands.Command 		|Description|
 |----|----|
 |C w h          | Create a new canvas of width w and height h|
 |L x1 y1 x2 y2  | Draw a new line from coordinates (x1, y1) to (x2, y2) horizontally or vertically. Lines are made up of the x character|
@@ -99,7 +99,7 @@ This command will give you interactive
 
 1. I have used junit and mockito for testing the app
 2. test is located in test dir (ascii-drawing/src/test/)
-3. CommandProcessorTest tests the CommandProcessor.java 
+3. CommandProcessorTest tests the app.UserInputParser.java 
 
 
 

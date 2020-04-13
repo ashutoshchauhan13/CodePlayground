@@ -1,3 +1,5 @@
+package utils;
+
 public class CharacterPrinter {
 
     public void printLines(char[][] lines) {
