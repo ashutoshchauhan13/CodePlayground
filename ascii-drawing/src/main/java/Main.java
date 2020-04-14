@@ -1,6 +1,3 @@
-import app.CommandProcessor;
-import app.UserCommandProcessor;
-
 import java.util.Scanner;
 
 public class Main {

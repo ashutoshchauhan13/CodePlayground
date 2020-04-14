@@ -99,7 +99,7 @@ This command will give you interactive
 
 1. I have used junit and mockito for testing the app
 2. test is located in test dir (ascii-drawing/src/test/)
-3. CommandProcessorTest tests the app.UserInputParser.java 
+3. CommandProcessorTest tests the CommandFactory.java 
 
 
 

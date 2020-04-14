@@ -5,7 +5,7 @@ import java.util.Map;
 
 public enum CommandType {
 
-    CANVAS("C", 2), LINE("L", 4), RECTANGLE("R", 4), FILL("B", 3), QUIT("Q", 0);
+    CANVAS("C", 2), LINE("L", 4), RECTANGLE("R", 4), FILL("B", 3), QUIT("Q", 0), POINT("P",2);
 
     private static final Map<String, CommandType> lookup = new HashMap<>();
 

@@ -5,7 +5,6 @@ import utils.CharacterPrinter;
 
 public class AsciiCanvas implements Canvas {
 
-
     private char[][] pixels;
     private CharacterPrinter characterPrinter;
 
